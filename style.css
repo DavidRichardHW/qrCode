@@ -1,0 +1,67 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+/* variables */
+:root{
+    /*color*/
+        --color1: hsl(212, 45%, 89%);
+        --color2: hsl(216, 15%, 48%);
+        --color3: hsl(218, 44%, 22%);
+
+    /*font*/
+        --typeFont1: 'Outfit', sans-serif;
+}
+
+/* mobileFirst */
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        /*layout*/
+            align-items: center;
+            display: flex;
+            justify-content: center;
+
+        /*box*/
+            height: 100vh;
+            min-width: 350px;
+            width: 100vw;
+        
+        /*style*/
+            background-color: var(--color1);
+            font-family: var(--typeFont1);
+    }
+    body > div{
+        /*layout*/
+            display: grid;
+            grid-template-rows: 65fr 15fr 20fr;
+            place-items: center;
+
+        /*box*/
+            aspect-ratio: 1 / 1.5;
+            width: clamp(250px, 80%, 300px);
+
+        /*style*/
+            background-color: white;
+            border-radius: 20px;
+    }
+    body > div > img{
+        border-radius: 20px;
+        height: 90%;
+        object-fit: cover;
+        width: 90%;
+    }
+    body > div > h1{
+        font-size: 1.4em;
+        text-align: center;
+        width: 90%;
+    }
+    body > div > p{
+        color: var(--color2);
+        font-size: 15px;
+        text-align: center;
+        width: 80%;
+    }
+/* /mobileFirst */
